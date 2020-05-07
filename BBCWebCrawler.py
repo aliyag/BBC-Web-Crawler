@@ -1,8 +1,4 @@
-# Code written by Aliya Gangji on September 5, 2018 
-# Description: A Web Crawler for BBC Website that scrapes News Headlines and their corresponding cateogories
-# The data was used to train Watson NLU on what a typical news category for BBC is
 
-# EXTERNAL LIBRARIES
 import urllib2
 from bs4 import BeautifulSoup
 import Queue
