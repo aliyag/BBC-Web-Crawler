@@ -1,4 +1,5 @@
 
+
 import urllib2
 from bs4 import BeautifulSoup
 import Queue
@@ -7,19 +8,6 @@ import re
 import csv
 
 
-# IN ORDER TO AVOID CHARACTER ERRORS
-reload(sys)
-sys.setdefaultencoding('utf8')
-# STARTING URL
-url = 'http://www.bbc.com/'
-# QUEUE TO STORE LINKS
-links = Queue.Queue()
-# put url in links queue
-links.put(url)
-# DICT THAT STORES LINKS THAT ARE ALREADY IN QUEUE
-prevAddedToQueue = {}
-# BOOLEAN TO CHECK IF QUEUE IF EMPTY
-emptyQueue = False
 
 # Formats the link, if valid link, adds to queue
 def addLinkToQueueIfValid(link):
